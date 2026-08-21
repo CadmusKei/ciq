@@ -12,7 +12,7 @@ export default function block({children, extras, name}) {
             <div className={`
             w-full flex-1 bg-neutral-100 rounded-3xl
             flex justify-center items-center shrink-0 flex-col
-            p-10 space-y-10`} >
+            p-10 space-y-10 pb-20`} >
                 
                 {children}
             </div>
