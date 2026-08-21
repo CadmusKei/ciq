@@ -1,11 +1,11 @@
 
 
-export default function PlayButton() {
+export default function PlayButton({onClick}) {
     return (
         <div className="w-10 h-10 border-2 rounded-lg border-neutral-400
         hover:border-neutral-300 transition duration-300
         flex items-center justify-center bg-neutral-600 
-        hover:bg-neutral-500 transtion duration-300">
+        hover:bg-neutral-500">
             <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
