@@ -12,7 +12,7 @@ export default function CodeCard({children, extras, colour, codeColour}) {
                 {children}
             </div>
 
-            <div className={`mt-auto ${colour} h-[3.5rem] w-full flex items-center p-5
+            <div className={`mt-auto ${colour} h-[4rem] w-full flex items-center p-5
              flex-row-reverse gap-3`}>
                 <PlayButton/>
             </div>
