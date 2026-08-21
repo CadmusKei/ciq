@@ -3,9 +3,9 @@
 export default function CalloutCard({children, extras}) {
     return (
         <div className={` ${extras}
-        w-[80%] h-fit bg-neutral-100 rounded-3xl border-4 border-neutral-300
+        w-[80%] h-fit bg-neutral-200 rounded-2xl border-2 border-neutral-300
         flex justify-center items-center shrink-0 flex-col
-        p-10`} >
+        p-5 shadow-lg`} >
             {children}
         </div>
     );

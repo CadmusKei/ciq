@@ -1,15 +1,16 @@
 
 
-export default function Button() {
+export default function PlayButton() {
     return (
         <div className="w-10 h-10 border-2 rounded-lg border-neutral-400
-        shadow-2xl shadow-black hover:border-neutral-300 transition duration-300
-        flex items-center justify-center">
+        hover:border-neutral-300 transition duration-300
+        flex items-center justify-center bg-neutral-600 
+        hover:bg-neutral-500 transtion duration-300">
             <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className={`w-6 h-6 fill-neutral-400
-                    hover:fill-neutral-300 transition duration-200`}
+                className={`w-6 h-6 fill-neutral-200
+                    hover:fill-neutral-200 transition duration-200`}
             >
                 <path
                     fillRule="evenodd"
