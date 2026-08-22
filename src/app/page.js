@@ -25,9 +25,9 @@ export default function Home() {
      ${backgroundColour}
      overflow-y-scroll`}>
 
-      <Bar colour={blockColour} topicColour={accent2}/>
+      <Bar colour={blockColour}/>
 
-      <Block extras="mt-40" name="Lorem Ipsum" colour={blockColour} headingCol={accent1} headingTextColour={accent1Text} >
+      <Block extras="mt-35" name="This Nezuko" colour={blockColour} headingCol={accent1} headingTextColour={accent1Text} >
         <ProblemCard> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum architecto mollitia itaque eaque asperiores ex reprehenderit iste veritatis totam, ipsam modi, odit vel? Accusamus consequatur facere ipsum vero cupiditate cum quo necessitatibus illo similique amet non fugiat suscipit pariatur enim natus sed nisi numquam, sapiente labore accusantium quae. Accusamus, placeat. </ProblemCard>
         <ProblemCard>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque doloribus repudiandae facilis sint nisi quia in praesentium dolores perferendis. Nostrum est repellat vero voluptate nemo quam, impedit nihil deserunt.</ProblemCard>
         <Divider colour={divColour}/>
