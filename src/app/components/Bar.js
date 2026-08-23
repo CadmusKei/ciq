@@ -42,20 +42,24 @@ const topics = [
 
 export default function Bar({ colour }) {
     return (
-        <div className={`w-[95%] top-[3%] ${colour} rounded-full shadow-xl
-            absolute flex p-3 pl-5 items-center justify-start gap-8`}
+        <div className={`w-[95%] h-[10%] top-[3%] ${colour} rounded-full shadow-xl
+            absolute flex p-3 pl-5 items-center justify-start gap-5`}
         >
             <HomeButton />
 
+            <div className="flex items-center justify-center 
+            pl-8 pr-8 p-1 rounded-full h-[90%]
+            bg-neutral-300 gap-10">
             {topics.map((topic) => (
                 <TopicButton
-                    key={topic.name}
-                    name={topic.name}
-                    colour={topic.colour}
-                    textColour={topic.textColour}
-                    shadow={topic.shadow}
+                key={topic.name}
+                name={topic.name}
+                colour={topic.colour}
+                textColour={topic.textColour}
+                shadow={topic.shadow}
                 />
             ))}
+            </div>
         </div>
     );
 }
