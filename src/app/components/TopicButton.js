@@ -2,10 +2,10 @@
 export default function TopicButton({name, colour, textColour, shadow, onClick}) {
 
     return (
-        <div className={` h-[90%] hover:border-2 border-neutral-400 ${colour} ${textColour}
+        <div className={` h-[90%] border-2 border-neutral-300 ${colour} ${textColour}
         rounded-4xl ${shadow}/40
         flex items-center justify-start p-3 gap-2 pl-3 pr-6
-        group hover:shadow-xl shadow-sm hover:bg-neutral-200
+        group hover:shadow-xl hover:bg-neutral-200
         duration-900 hover:duration-200 text-black`}>
 
             <svg viewBox="0 0 24 24" fill="currentColor" className="size-4">
