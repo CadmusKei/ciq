@@ -3,7 +3,8 @@
 export default function HomeButton({onClick, colour}) {
     return (
         <div className={`w-12 h-12 aspect-square border-neutral-400 rounded-full
-        flex items-center justify-center shadow-xl shadow-pink-300/70
+        flex items-center justify-center 
+        shadow-xl hover:inset-shadow-sm inset-shadow-neutral-600
         bg-linear-to-br from-pink-500 to-blue-400 transition duration-900 hover:duration-300
          group hover:from-blue-400 hover:to-pink-500 `}>
             <svg

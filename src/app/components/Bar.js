@@ -48,8 +48,8 @@ export default function Bar({ colour }) {
             <HomeButton />
 
             <div className="flex items-center justify-center 
-            pl-2 pr-2 p-1 rounded-full h-[90%]
-            bg-neutral-300 gap-10 inset-shadow-sm inset-shadow-neutral-400">
+            pl-3 pr-3 p-1 rounded-full h-[90%]
+            bg-neutral-300 gap-7 inset-shadow-sm inset-shadow-neutral-400">
             {topics.map((topic) => (
                 <TopicButton
                 key={topic.name}
