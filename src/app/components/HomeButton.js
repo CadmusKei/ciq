@@ -2,13 +2,14 @@
 
 export default function HomeButton({onClick, colour}) {
     return (
-        <div className={`w-12 h-12 border-2 border-neutral-400 rounded-full
-        flex items-center justify-center hover:border-neutral-300
-        transition duration-900 hover:duration-300 group `}>
+        <div className={`w-12 h-12 aspect-square border-neutral-400 rounded-full
+        flex items-center justify-center hover:shadow-xl shadow-pink-300/70
+        bg-linear-to-br from-pink-500 to-blue-400 transition duration-900 hover:duration-300
+         group hover:from-blue-400 hover:to-pink-500 `}>
             <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className={` w-6 h-6 fill-neutral-400 group duration-900 transition
+                className={` w-6 h-6 fill-neutral-100 group duration-900 transition
                     group-hover:fill-neutral-200 group-hover:duration-300`}
             >
            

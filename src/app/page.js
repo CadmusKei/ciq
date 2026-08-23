@@ -1,34 +1,59 @@
-import Bar from "./components/Bar"
-import Block from "./components/Block"
-import ProblemCard from "./components/ProblemCard"
-import CodeCard from "./components/CodeCard"
-import CalloutCard from "./components/CalloutCard"
-import Divider from "./components/Divider"
-import CodeOutput from "./components/CodeOutput"
+import Bar from "./components/Bar";
+import Block from "./components/Block";
+import ProblemCard from "./components/ProblemCard";
+import CodeCard from "./components/CodeCard";
+import CalloutCard from "./components/CalloutCard";
+import Divider from "./components/Divider";
+import CodeOutput from "./components/CodeOutput";
 
+// const topicColours = [
+//   {
+//     name:"Greedy",
+
+//     darkColours: {
+//       accentBorder: "border-purple-800",
+//       accentText: "text-purple-100",
+//       accent1: "bg-purple-800",
+//       accent2: "bg-purple-800/70",
+//       divColour: "bg-purple-300/90"
+//     },
+
+//     lightColours: {
+//       accentBorder: "border-purple-800",
+//       accentText: "text-purple-100",
+//       accent1: "bg-purple-800",
+//       accent2: "bg-purple-800/70",
+//       divColour: "bg-purple-300/90"
+//     }
+//   },
+//   {},
+//   {},
+//   {},
+//   {}
+// ];
 
 let accent2 = "border-[#6B68BD]";
 let accent1 = "bg-purple-800";
-let accent1Text = "text-white"
+let accentBorder = "border-purple-800";
+let accent1Text = "text-black";
+let divColour = "bg-purple-300/90";
 
-let divColour = "bg-neutral-700"
-let calloutColour = "bg-neutral-700"
+let calloutColour = "bg-neutral-300";
+let codeColour2 = "bg-purple-800/70";
+let codeColour = "bg-neutral-300";
 
-let codeColour2 = "bg-neutral-700";
-let codeColour = "bg-neutral-900"
-
-let blockColour = "bg-neutral-800"
-let backgroundColour = "bg-neutral-900"
+let lightBlockColour = "bg-neutral-200";
+let lightBackgroundColour = "bg-neutral-300";
 
 export default function Home() {
   return (
     <div className={`flex w-full h-screen flex-col items-center relative 
-     ${backgroundColour}
+     ${lightBackgroundColour}
      overflow-y-scroll`}>
 
-      <Bar colour={blockColour}/>
+      <Bar colour={lightBlockColour}/>
 
-      <Block extras="mt-35" name="This Nezuko" colour={blockColour} headingCol={accent1} headingTextColour={accent1Text} >
+      <Block extras="mt-35" name="Greedy" colour={lightBlockColour} headingCol={accent1} borderColour={accentBorder} headingTextColour={accent1Text} >
         <ProblemCard> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum architecto mollitia itaque eaque asperiores ex reprehenderit iste veritatis totam, ipsam modi, odit vel? Accusamus consequatur facere ipsum vero cupiditate cum quo necessitatibus illo similique amet non fugiat suscipit pariatur enim natus sed nisi numquam, sapiente labore accusantium quae. Accusamus, placeat. </ProblemCard>
         <ProblemCard>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque doloribus repudiandae facilis sint nisi quia in praesentium dolores perferendis. Nostrum est repellat vero voluptate nemo quam, impedit nihil deserunt.</ProblemCard>
         <Divider colour={divColour}/>
@@ -38,8 +63,6 @@ export default function Home() {
         <Divider colour={divColour}/>
         <CalloutCard colour={calloutColour} >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, explicabo!</CalloutCard>
       </Block>
-
-
     </div>
   );
 }
