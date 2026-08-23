@@ -7,7 +7,7 @@ export default function CodeOutput({children, extras, colour, codeColour}) {
         flex items-center shrink-0 flex-col overflow-hidden
         shadow-2xl border-4 border-neutral-600`} >
             <div className={`w-full flex-1 min-h-0 ${codeColour}
-            flex p-12 overflow-scroll text-white text-xl font-mono`} >   
+            flex p-12 overflow-scroll text-black text-xl font-mono`} >   
                 {children}
             </div>
 
